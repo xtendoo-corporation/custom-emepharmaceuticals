@@ -32,5 +32,16 @@
                 </td>
             </t>
         </xpath>
+        <xpath expr="//table/tfoot/tr/td" position="before">
+            <t t-if="o.settlement_type == 'sale_invoice'">
+                <td />
+                <td />
+                <td />
+                <td />
+                <td />
+            </t>
+        </xpath>
+
+
     </template>
 </odoo>
