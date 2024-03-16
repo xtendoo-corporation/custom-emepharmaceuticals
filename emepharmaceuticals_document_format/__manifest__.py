@@ -13,7 +13,6 @@
     "data": [
         "report/purchase_quotation_templates.xml",
         "report/report_settlement_templates.xml",
-        "security/ir.model.access.csv",
     ],
     "installable": True,
 }

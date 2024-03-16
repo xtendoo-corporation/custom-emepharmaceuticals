@@ -6,11 +6,11 @@
     >
         <xpath expr="//th" position="after">
             <t t-if="o.settlement_type == 'sale_order'">
-                <th class="text-start">Invoice</th>
-                <th class="text-start">Customer</th>
-                <th class="text-start">Description</th>
-                <th class="text-start">Quantity</th>
-                <th class="text-start">Amount</th>
+                <th class="text-start">Pedido</th>
+                <th class="text-start">Cliente</th>
+                <th class="text-start">Descripción</th>
+                <th class="text-start">Cantidad</th>
+                <th class="text-start">Total</th>
             </t>
         </xpath>
         <xpath expr="//table/tbody/tr/td" position="after">
@@ -19,16 +19,16 @@
                     <span t-field="o.sale_order_id"/>
                 </td>
                 <td>
-                    <span t-field="l.invoice_line_id.move_id.partner_id"/>
+                    <span t-field="l.sale_line_id.order_id.partner_id"/>
                 </td>
                 <td>
-                    <span t-field="l.invoice_line_id.name"/>
+                    <span t-field="l.sale_line_id.name"/>
                 </td>
                 <td>
-                    <span t-field="l.invoice_line_id.quantity"/>
+                    <span t-field="l.sale_line_id.product_uom_qty"/>
                 </td>
                 <td>
-                    <span t-field="l.invoice_line_id.price_subtotal"/>
+                    <span t-field="l.sale_line_id.price_subtotal"/>
                 </td>
             </t>
         </xpath>
