@@ -16,7 +16,7 @@
         <xpath expr="//table/tbody/tr/td" position="after">
             <t t-if="o.settlement_type == 'sale_order'">
                 <td>
-                    <span t-field="o.sale_order_id"/>
+                    <span t-field="l.sale_line_id.order_id"/>
                 </td>
                 <td>
                     <span t-field="l.sale_line_id.order_id.partner_id"/>
