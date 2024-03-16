@@ -33,7 +33,7 @@
             </t>
         </xpath>
         <xpath expr="//table/tfoot/tr/td" position="before">
-            <t t-if="o.settlement_type == 'sale_invoice'">
+            <t t-if="o.settlement_type == 'sale_order'">
                 <td />
                 <td />
                 <td />
